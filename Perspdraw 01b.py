@@ -3,7 +3,7 @@ from PIL import Image
 import numpy as np
 
 class pxy: # +x is right and +y is up
-
+    #for pxy objects a png file is associated with a numpy array with methods to draw lines and fill polygons
     red = [120,20,20] ; green = [20, 100, 20]; blue = [20, 60, 120]; white = [255, 255, 255]; light = [160, 160, 160]; dark = [50, 50,50]; grey = [110,110,110]
 
     def __init__(self, xxx, yyy):  
@@ -36,7 +36,7 @@ class pxy: # +x is right and +y is up
                 Ex=ns[n,0]; n+=1 # Ex note as Sx above
 
 #MAIN
-Eye = np.array([6,-10,30]) #view/camera point for perspective CHANGE THIS FOR DIFFERENT VIEW
+Eye = np.array([15,-10,30]) #view/camera point for perspective CHANGE THIS FOR DIFFERENT VIEW eg ([15,-10,30]) 
 bStraightenVerts = False
 bRandTinge = True; bThisRefDir = True; RefDir = [3,-20,1] # pointing toward (sic) illum source, any length - ignored if bThisRefDir is False
 
